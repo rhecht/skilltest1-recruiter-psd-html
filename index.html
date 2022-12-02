@@ -1,0 +1,340 @@
+<html>
+
+<head>
+<!-- Objective: 
+
+Please do your best to convert the PSD to HTML that is provided below.
+
+<a href="https://recruiting1.s3.us-west-1.amazonaws.com/skills-test/generic/CT_SkillTest_v3.psd" target="_blank">https://recruiting1.s3.us-west-1.amazonaws.com/skills-test/generic/CT_SkillTest_v3.psd</a>
+
+	Goal is to convert this into a single page response site. The carousel should be responsive. On mobile, the tabs should be converted to an accordion. History, team - these are internal links in the page to their respective sections. -->
+
+	<!-- Done by Rafi Hecht. December 1, 2022 -->
+
+
+<script src="assets/js/jquery-2.2.4.min.js"></script>
+
+<!-- Boostrap -->
+
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Carousel slider -->
+<!--
+<link rel="stylesheet" href="css/carousel.css">
+<script src="js/carousel.js"></script>
+-->
+
+<link rel="stylesheet" href="assets/splide/css/splide.min.css">
+<script src="assets/splide/js/splide.min.js"></script>
+
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+
+</head>
+<body>
+
+<!-- Background 1 and Menu -->
+
+	<section id="sec1">
+		<header>
+<!-- Logo -->
+		<div class="logo">
+			<a href="#">
+				<img src="img/logo.png">
+			</a>
+		</div>
+			<menu>
+
+<nav  id="navbar-header"  class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#history">01. HISTORY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">02. TEAM</a>
+        </li>
+    </div>
+  </div>
+</nav>
+
+			</menu>
+
+
+		</header>
+	</section>
+<!-- Plain White Section 1, with logo and menu -->
+	<section id="sec2">
+<!-- Logo -->
+		<div class="logo">
+			<a href="#">
+				<img src="img/logo-2.png">
+			</a>
+		</div>
+		<menu>
+			<nav id="navbar-header2"  class="navbar  navbar-expand-lg navbar-light bg-light">
+				  <div class="container-fluid">
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler2" aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation" style="float:right;">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbarToggler2">
+				      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				        <li class="nav-item">
+				          <a class="nav-link active" aria-current="page" href="#history">01. HISTORY</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="#team">02. TEAM</a>
+				        </li>
+				    </div>
+				  </div>
+				</nav>
+			
+		</menu>
+	</section>
+
+
+<!-- Background 2, with carousel -->
+	<section id="history">
+
+		<div class="textarea">
+			<div class="itemnumber">
+				<div class="number">
+					01.
+					<div class="subtitle">
+						HISTORY
+					</div>
+				</div>
+			</div>
+			<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. 
+			</p>
+	</div>
+
+		<!-- Div with opacity -->
+		<div class="sliderbg">
+
+<!-- Carousel -->
+
+<!-- consider using https://splidejs.com/tutorials/thumbnail-carousel/ -->
+
+<!-- Slideshow container -->
+
+<div class="slideshow-container">
+
+
+	<div id="thumbnail-carousel" class="splide" aria-label="">
+	  <div class="splide__track">
+			<ul class="splide__list">
+				<li class="splide__slide" >
+					<img src="img/carousel1.png" alt="">
+				</li>
+				<li class="splide__slide">
+					<img src="img/carousel2.png" alt="">
+				</li>
+				<li class="splide__slide">
+					<img src="img/carousel3.png" alt="">
+				</li>
+				<li class="splide__slide">
+					<img src="img/carousel4.png" alt="">
+				</li>
+			</ul>
+
+
+	  </div> <!-- splide__track -->
+	</div> <!-- thumbnail-carousel -->
+
+
+</div> <!-- slideshow-container -->
+
+
+
+		</div> <!-- sliderbg -->
+	</section> <!-- history -->
+
+<!-- Plain White Section 2 -->
+	<section id="team">
+		<ul class="textarea">
+
+		<li class="itemnumber">
+				<div class="number">
+					02.
+						<div class="subtitle">
+							CLIMB
+						</div> <!-- number -->
+			</div> <!-- itemnumber -->
+		</li><!-- itemnumber -->
+			<li class="teamtext">
+				Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. 
+			</li>
+		</ul><!-- textarea -->
+
+
+	</section><!-- team -->
+
+
+<section id="sec5">
+
+		<!-- SubNavs -->
+
+		<nav class="sec5nav">
+		  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+		    <button class="nav-link active" id="nav-mt1-tab" data-bs-toggle="tab" data-bs-target="#nav-mt1" type="button" role="tab" aria-controls="nav-mt1" aria-selected="true">Mountain 1</button>
+		    <button class="nav-link" id="nav-mt2-tab" data-bs-toggle="tab" data-bs-target="#nav-mt2" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Mountain 2</button>
+
+		  </div>
+		</nav> <!-- sec5nav -->
+		<div class="tab-content" id="nav-tabContent">
+		  <div class="tab-pane fade show active" id="nav-mt1" role="tabpanel" aria-labelledby="nav-mt1-tab">
+
+		  	<div class="schedule">
+		  		<h2>Schedule</h2>
+		  		<ul>
+		  			<li>
+		  				<ul>
+		  					<li>
+						  		25 Nov 2016
+		  					</li>
+		  					<li>
+		  						Vestibulum viverra
+		  					</li>
+		  				</ul>
+		  			</li>
+		  			<li></li>
+		  			<li>
+		  				<ul>
+		  					<li>
+								28 Nov 2016
+		  					</li>
+		  					<li>
+		  						Vestibulum viverra
+		  					</li>
+		  				</ul>
+		  			</li>
+		  			<li>
+		  				<ul>
+		  					<li>
+
+							18 Dec 2016
+		  					</li>
+		  					<li>
+		  						Vestibulum viverra
+		  					</li>
+		  				</ul>
+		  			</li>
+		  			<li></li>
+		  			<li>
+		  				<ul>
+		  					<li>
+
+							7 Jan 2017
+		  					</li>
+		  					<li>
+		  						Vestibulum viverra
+		  					</li>
+		  				</ul>
+		  			</li>
+		  		</ul>
+		  	</div> <!-- schedule -->
+		  	
+		  </div> <!-- nav-mt1 -->
+		  <div class="tab-pane fade" id="nav-mt2" role="tabpanel" aria-labelledby="nav-mt2-tab">
+		  	<div class="schedule">
+		  		<h2>Schedule</h2>
+		  		<ul>
+		  			<li>
+		  				<ul>
+		  					<li>
+						  		25 Nov 2016
+		  					</li>
+		  					<li>
+		  						Vestibulum viverra
+		  					</li>
+		  				</ul>
+		  			</li>
+		  			<li>
+		  				<ul>
+		  					<li>
+								13 Dec 2016
+		  					</li>
+		  					<li>
+		  						Vestibulum viverra
+		  					</li>
+		  				</ul>
+		  			</li>
+		  			<li>
+		  				<ul>
+		  					<li>
+
+							29 Dec 2016
+		  					</li>
+		  					<li>
+		  						Vestibulum viverra
+		  					</li>
+		  				</ul>
+		  			</li>
+		  			<li>
+		  				<ul>
+		  					<li>
+
+							9 Feb 2017
+		  					</li>
+		  					<li>
+		  						Vestibulum viverra
+		  					</li>
+		  				</ul>
+		  			</li>
+		  		</ul>
+		  	</div> <!-- schedule -->
+
+		  </div> <!-- nav-mt2 -->
+
+		</div> <!-- nav-tabContent -->
+
+</section> <!-- sec5 -->
+
+
+<!-- Footer -->
+
+<footer>
+	<ul>
+		<li>
+		<div class="logo">
+			<a href="#">
+				<img src="img/logo-blue-full.png">
+			</a>
+		</div>
+		</li>
+		<li>
+			COPYRIGHT 2016. ALL RIGHTS RESERVED.
+		</li>
+
+	</ul>
+</footer>
+
+<script type="text/javascript">
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+</html>

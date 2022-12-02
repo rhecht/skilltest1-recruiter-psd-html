@@ -1,0 +1,399 @@
+/* Objective: 
+
+Please do your best to convert the PSD to HTML that is provided below.
+
+<a href="https://recruiting1.s3.us-west-1.amazonaws.com/skills-test/generic/CT_SkillTest_v3.psd" target="_blank">https://recruiting1.s3.us-west-1.amazonaws.com/skills-test/generic/CT_SkillTest_v3.psd</a>
+
+Goal is to convert this into a single page response site. The carousel should be responsive. On mobile, the tabs should be converted to an accordion. History, team - these are internal links in the page to their respective sections.
+
+*** Done by Rafi Hecht. December 1, 2022 ***
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+
+body{
+	width:100%;
+}
+
+section#sec1, section#sec2, section#history, section#team, section#sec5,
+#nav-mt1, #nav-mt2{
+	width:100%;
+	background-size: cover !important;
+}
+
+section#sec1{
+	background:url("../img/backgrounds/bg1-lamountains-export.png") no-repeat;
+	min-height:1500px;
+}
+
+nav.navbar{
+
+}
+
+
+.bg-light{
+	background: none !important;
+}
+
+section#sec2{
+	min-height:50px;
+
+}
+
+
+.slideshow-container{
+	height:200px;
+	vertical-align:;bottom:0;
+
+}
+
+
+#history{
+	background:url("../img/backgrounds/bg2-peak.png") no-repeat;
+	height:1200px;
+}
+
+#history div.textarea
+{
+	height:1000px;
+}
+
+#history div.textarea,
+#team div.textarea,
+#team ul.textarea
+{
+	padding-left:20%;
+	padding-right:20%;
+}
+
+#team ul.textarea{
+	list-style:none;
+	display:inline-block;
+}
+
+#team ul.textarea li.itemnumber{
+}
+
+#team ul.textarea li.teamtext{
+	padding-top:80px;
+}
+
+div.itemnumber{
+	width:100%;
+	height:250px;
+	clear:both;
+}
+div.number{
+	font-family:"Oswald";
+	font-weight:bold;
+	color:#70809b;
+	font-size:135px;
+	z-index:1;
+	float:left;
+}
+
+
+div.subtitle{
+	font-family:"Oswald";
+	font-weight:regular;
+	color:#414f6b;
+	font-size:32px;
+	float:right;
+	margin-left:-20px;
+	margin-top:90px;
+	z-index:2;
+
+}
+
+
+section#history p{}
+
+
+
+div.sliderbg{
+	background-color:#414f6b;
+	opacity:0.8;
+	padding-top:25px;
+}
+
+div.sliderbg .slideshow-container{
+	width:45%;
+	margin: 0 auto;
+}
+
+div.sliderbg ul{
+	margin:auto;
+}
+
+div.sliderbg ul li img{
+	display:block;
+	margin:0 auto;
+}
+
+button.splide__arrow{
+	display:none;
+}
+
+
+
+section#team{
+	min-height:150px;
+
+}
+
+section#team .teamtext{
+	width:70%;
+	float:right;
+}
+
+
+section#sec5{
+	background-color:#414f6b;
+	min-height:0px;
+}
+
+nav.sec5nav{
+	padding-left:15%;
+}
+
+nav.sec5nav{
+	background-color:#414f6b;
+	font-family:"Oswald";
+}
+
+section#sec1 div.logo,
+section#sec1 nav,
+section#sec2 div.logo,
+section#sec2 nav,
+{
+	width:30%;
+}
+section#sec1 div.logo,
+section#sec2 div.logo{
+	float:left;
+	margin-left:20%;
+}
+
+section#sec1 nav,
+section#sec2 nav{
+	margin-right:20%;
+	float:right;
+}
+
+section#sec1 nav ul,
+section#sec2 nav ul{
+
+}
+
+
+section#sec1 nav ul li,
+section#sec2 nav ul li{
+margin-left:15px;
+margin-right:15px;
+font-family:"Lato";
+font-style:italic;
+font-weight:bold;
+}
+
+section#sec1 nav ul li a{
+	color:#fff;
+}
+
+section#sec2 nav ul li a{
+	color:#000;
+}
+
+
+nav.sec5nav .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+	text-transform:uppercase;
+	color:#b0b4be;
+	font-weight:bold;
+}
+nav.sec5nav .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	background-color:#b0b4be;
+	color:#414f6b;
+	text-decoration:underline ;
+
+}
+
+div.schedule{
+	margin-left:17% !important;
+	padding:30px;
+	background: rgba(255, 255, 255, 0.6);
+	width:600px;
+}
+
+div.schedule h2{
+	font-family: "Oswald";
+	font-weight:bold;
+	color:#414f6b;
+}
+
+div.schedule ul{
+	list-style:none;
+}
+
+div.schedule ul li{
+	margin:6px 0;
+ display: inline-block;
+ width:100%;
+}
+
+div.schedule ul li ul{
+	display:block;
+}
+
+div.schedule ul li ul li{
+	width:50%;
+	float:left;
+}
+
+.nav-tabs .nav-link{
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+}
+#nav-mt1, #nav-mt2{
+}
+
+#nav-mt1{
+	background:url("../img/backgrounds/bg3-photo-1417021423914-070979c8eb34.png") no-repeat;
+	padding-top:100px;
+	min-height:538px;
+	background-position-y:-300px !important;
+}
+
+#nav-mt2{
+	background:url("../img/backgrounds/bg3-2-photo-1414449381078-c7768b8f19b8.png") no-repeat;
+	padding-top:100px;
+	min-height:538px;
+	background-position-y:-150px !important;
+
+}
+
+footer{
+	background-color:#414f6b;
+	color: #63769d;
+	padding:10px;
+	min-height:80px;
+}
+footer ul{
+	list-style:none;
+}
+footer ul li{
+	float:left;
+	margin:6px 0;
+ display: inline-block;
+}
+footer ul li:first-child{
+	width:35%;
+	margin-left:15%;
+}
+footer ul li:last-child{
+	width:35%;
+	text-align:right;
+	margin-right:15%;
+	font-style: italic;
+	font-weight:bold;
+}
+
+/* Splide Slider */
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__slide {
+  opacity: 0.6;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
+
+/* Mobile  */
+
+@media only screen and (min-width:1024px) and (max-width:1280px){
+section#sec1, section#sec2, section#history, section#team, section#sec5,
+	#nav-mt1, #nav-mt2{
+		background-size: cover !important;
+	}
+	section#sec1{
+		min-height:800px !important;
+	}
+	div.schedule{
+		margin-left:auto !important;
+		margin-right:auto !important;
+	}
+
+}
+@media only screen and (max-width:1024px){
+	.bg-light{
+		background-color: #414f6b !important;
+	}
+	
+	.navbar-toggler-icon {
+	  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+
+	.navbar-toggler{
+		border-color: rgb(255,255,255);
+	}
+	
+
+	section#sec1{
+		min-height:300px;
+	}
+
+	section#sec2{
+		min-height:70px;
+	}
+
+	section#team ul li.teamtext{
+		width:100%;
+	}
+
+	#history {
+	background-position-y:-200px !important;
+	height:700px;
+
+	}
+	#history div.textarea{
+		height:500px;
+		padding:30px;
+		background: rgba(255, 255, 255, 0.6);
+	}
+
+	div.schedule{
+		width:98%;
+		margin:1% !important;
+	}
+
+	#nav-mt1, #nav-mt2{
+		min-height:500px;
+		background-position-y:0 !important;
+	}
+
+	footer ul{
+		padding:0;
+	}
+
+	footer ul li{
+		width:100% !important;
+		display:block !important;
+		float:none !important;
+		text-align:center !important;
+		padding:12px !important;
+		margin:0 !important;
+	}
+}

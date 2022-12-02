@@ -1,0 +1,14 @@
+Font: 
+
+Bebas
+
+https://fonts.google.com/specimen/Bebas+Neue
+
+Lato Light
+
+https://fonts.google.com/specimen/Lato
+
+Oswald Bold
+
+https://fonts.google.com/specimen/Oswald
+
